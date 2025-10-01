@@ -1,5 +1,5 @@
 * {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", Arial;
   font-style: italic;
   font-size: 20px;
   line-height: 30px;
@@ -37,4 +37,5 @@
   text-decoration: underline double 3px;
   letter-spacing: 5px;
   font-style: normal;
+
 }
