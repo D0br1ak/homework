@@ -1,0 +1,21 @@
+.header {
+  height: 60px;
+  background-color: #ffc559;
+}
+.header__nav {
+  width: 155px;
+  background-color: #ff8902;
+}
+.main {
+  background-color: #ffdc7c;
+}
+.block-2 {
+  background-color: #faf066;
+}
+.footer{
+background-color: #bbff1e;
+color: #ffffff;
+}
+.link {
+  color: #ffffff;
+}
