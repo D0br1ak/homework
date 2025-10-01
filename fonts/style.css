@@ -1,0 +1,40 @@
+* {
+  font-family: "OpenSans", "Arial";
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+#paragraph {
+  word-spacing: 8px;
+  left: 5px;
+  text-decoration: underline dotted #805300;
+  color: #ecec16;
+}
+
+.paragraph1 {
+  text-decoration: line-through 3px;
+  font-style: normal;
+}
+
+.paragraph2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+}
+
+
+.paragraph3 {
+  color: #ff57ff;
+  text-decoration: overline wavy #e773bb;
+  text-shadow: 2px 3px 8px #ff57ff;
+  word-spacing: 30px;
+}
+
+.paragraph4 {
+  text-align: left;
+  text-decoration: underline double 3px;
+  letter-spacing: 5px;
+  font-style: normal;
+}
