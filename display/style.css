@@ -1,0 +1,25 @@
+.conteiner {
+  max-width: 1000px;
+  max-height: 600px;
+  padding-left: 10px;
+  background-color: #fcd1d1;
+    display: inline-block;
+    overflow: auto;
+    box-sizing: border-box;
+    border-bottom-left-radius: 3%;
+    border-top-left-radius: 3% ;
+    border: 2px solid  #000000;
+}
+.element {
+ box-sizing: content-box ;
+  border: 2px solid  rgb(175, 2, 255);
+  box-shadow: inset 2px 5px 10px 5px #da55f5;
+  color: #ffffff;
+  padding: 10px;
+  margin: 30px 10px 27px 20px;
+  background-color: #e384f7;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  border-radius: 10%;
+}
