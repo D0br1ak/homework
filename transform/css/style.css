@@ -24,13 +24,12 @@ body {
 }
 .fixed__blok {
   display: flex ;
-width: 50%;
 min-height: 100px;
-margin: 0 10px 100px 0px;
   background: white;
 position: fixed;
-top: 80%;
+bottom: 50px;
 left: 50%;
+right: 50px;
 }
 .circle {
     background-color: red;
@@ -174,4 +173,5 @@ right: 99%;
   border: 1px solid rgb(255, 255, 255);
   background: #85ff8b;
   width: 20%;
+
 
