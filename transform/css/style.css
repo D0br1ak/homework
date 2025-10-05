@@ -144,6 +144,8 @@ left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+    color: rgb(0, 53, 13);
+  color: red;
   font-family: sans-serif;
   font-weight: 700;
   width: 200px;
@@ -172,3 +174,4 @@ right: 99%;
   border: 1px solid rgb(255, 255, 255);
   background: #85ff8b;
   width: 20%;
+
