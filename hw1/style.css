@@ -1,0 +1,33 @@
+*{
+  background: #414040;
+}
+.text {
+  color: white;
+}
+.container {
+    display: flex ;
+    justify-content: flex-end;
+  /* max-width: 1950px;
+  height: auto; */
+
+}
+.block {
+  display: flex ;
+width: 50%;
+min-height: 100px;
+margin: 0 10px 100px 0px;
+  background: white;
+position: fixed;
+top: 80%;
+left: 50%;
+
+}
+.circle {
+  background-color: red;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+}

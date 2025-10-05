@@ -1,0 +1,46 @@
+*{
+    background-color: grey;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.sucsess {
+
+  background: red;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  width: 200px;
+  height: 200px;
+  transition: all .3s 1.4s;
+}
+
+.sucsess:hover {
+  color: rgb(0, 53, 13);
+  background: greenyellow;
+}
+
+.sucsess::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-200px, 200px);
+  width: 10px;
+  height: 20px;
+  transition: 1.5s;
+  transition-timing-function: ease;
+}
+
+.sucsess:hover::after {
+  border: 1px solid black;
+  background: #fafafa;
+  width: 20%;
+
+}
