@@ -13,17 +13,19 @@ const result =  chooseName( 'Олег')
 console.log(result)
 
 const users = [
-  { name: "Алексей", role: "user" },
-  { name: "Мария", role: "admin" },
-  { name: "Павел", role: "user" },
-  { name: "Елена", role: "user" },
-  { name: "Дмитрий", role: "user" },
-  { name: "Виталий", role: "admin" }]
-  let usersCount = 0;
-
-for (let user of users) {
-  if (user.role !== "admin") {
-    usersCount++;
-  }
-}
-console.log(`Количество простых пользователей: ${usersCount}`);
+  { name: "Алексей", age: 27, isAdmin: false  },
+  
+  { name: "Сергей", age: 22, isAdmin: false  },
+  
+  { name: "Анна", age: 29, isAdmin: true  },
+  
+  { name: "Александр", age: 34, isAdmin: true  },
+  
+  { name: "Семён", age: 28, isAdmin: false  },
+  
+  { name: "Пётр", age: 21, isAdmin: false  },
+  ]
+  users.push({}) 
+for (let i = 0; i < users.length; i++){
+  console.log(users[i]) 
+}   
