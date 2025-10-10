@@ -52,7 +52,7 @@ visibility: visible;
   }
   .hero__img-control--mobile{
     display: flex;
-    margin-bottom: 0 0 30px;
+    margin: 0 0 30px;
   }
 
 }
@@ -60,4 +60,5 @@ visibility: visible;
 .hero__title{
   font-size: 12vw;
 }
+
 }
