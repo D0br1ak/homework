@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/fonts.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  <link rel="shortcut icon" href="./img/logos/logo-dark.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="shortcut icon" href="img/logos/logo-dark.svg" type="image/x-icon">
   <title>Wake & Bake</title>
 </head>
 
@@ -143,12 +141,12 @@
         <div class="container">
           <h2 class="program__title title">Программа обучения</h2>
           <div class="program__top">
-              <p class="program__text">Продолжительность курса — 4 недели
-                <br>
-                Программа обучения состоит из 8 модулей
-                <br>
-                На каждое занятие отводится по 6 часов
-              </p>
+            <p class="program__text">Продолжительность курса — 4 недели
+              <br>
+              Программа обучения состоит из 8 модулей
+              <br>
+              На каждое занятие отводится по 6 часов
+            </p>
             <ul class="tab-controls">
               <li class="tab-controls__item">
                 <a class="tab-controls__link tab-controls__link--active" href="#tab1">Неделя 1</a>
@@ -627,7 +625,7 @@
                 <div class="program__discount-value">
                   -30%
                 </div>
-                  <span>до 1 июня</span>
+                <span>до 1 июня</span>
               </div>
               <div class="price__item">
                 <div class="price__item-text">Стоимость курса без скидки</div>
@@ -644,8 +642,81 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="gallery__section gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="gallery__img">
+              <img src="img/decor/cakes.png" alt="">
+            </div>
+            <div class="gallery__content">
+              <div class="gallery__info">
+                <h2 class="gallery__title title">Фотогалерея</h2>
+                <p class="gallery__text">Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                  всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры под присмотром опытных
+                  наставников</p>
+              </div>
+              <div class="gallery__nav">
+                <button class="gallery__prev" type="button">
+                  <svg viewBox="0 0 13.2402 13.9678" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="13.240234" height="13.967773" fill="none"
+                    customFrame="#000000">
+                    <g id="Сочетание 5">
+                      <path id="Vector"
+                        d="M12.96 7.992L6.984 2.016L1.008 7.992L0 6.984L6.984 0L13.968 6.984L12.96 7.992Z"
+                        fill="rgb(255,165.055,91.8)" fill-rule="nonzero"
+                        transform="matrix(-4.37114e-08,-1,1,-4.37114e-08,0,13.9678)" />
+                      <path id="Vector" d="M0 0L1.44 0L1.44 12.24L0 12.24L0 0Z" fill="rgb(255,165.055,91.8)"
+                        fill-rule="nonzero" transform="matrix(-4.37114e-08,-1,1,-4.37114e-08,1,7.96777)" />
+                    </g>
+                  </svg>
+                </button>
+                <div class="gallery__pagination"></div>
+                <button class="gallery__next" type="button">
+                  <svg viewBox="0 0 13.24 13.9678" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="13.239990" height="13.967773" fill="none"
+                    customFrame="#000000">
+                    <g id="Сочетание 4">
+                      <path id="Vector"
+                        d="M12.96 7.992L6.984 2.016L1.008 7.992L0 6.984L6.984 0L13.968 6.984L12.96 7.992Z"
+                        fill="rgb(255,165.055,91.8)" fill-rule="nonzero"
+                        transform="matrix(-4.37114e-08,1,-1,-4.37114e-08,13.24,0)" />
+                      <path id="Vector" d="M0 0L1.44 0L1.44 12.24L0 12.24L0 0Z" fill="rgb(255,165.055,91.8)"
+                        fill-rule="nonzero" transform="matrix(-4.37114e-08,1,-1,-4.37114e-08,12.24,6)" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slider swiper">
+            <div class="gallery__wrapper swiper-wrapper">
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide1.jpg">
+                <img src="img/content/slider/slide1.jpg" alt="">
+              </a>
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide2.jpg">
+                <img src="img/content/slider/slide2.jpg" alt="">
+              </a>
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide3.jpg">
+                <img src="img/content/slider/slide3.jpg" alt="">
+              </a>
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide4.jpg">
+                <img src="img/content/slider/slide4.jpg" alt="">
+              </a>
+
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide2.jpg">
+                <img src="img/content/slider/slide2.jpg" alt="">
+              </a>
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide3.jpg">
+                <img src="img/content/slider/slide3.jpg" alt="">
+              </a>
+              <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/slider/slide4.jpg">
+                <img src="img/content/slider/slide4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+      </section>
   </div>
-  </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -743,7 +814,6 @@
   </div>
   <div class="modal ">
     <div class="modal__window">
-
       <a href="#" class="modal__close-btn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="24.000000" height="24.000000" fill="none" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
@@ -771,13 +841,13 @@
           <input id="#" class="field__input" type="email" placeholder="E-mail">
           <span>Введите e-mail</span>
         </label>
-        <button class="modal__button button" href="#">Получить подарок</button>
+        <button href="#" class="modal__button button">Получить подарок</button>
       </form>
     </div>
-
   </div>
+  <script src="js/fslightbox.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-<script src="./js/fslightbox.js"></script>
-<script src="./js/main.js"></script>
 
 </html>
