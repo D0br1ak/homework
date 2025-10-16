@@ -123,7 +123,7 @@
     breakpoints: {
       601: {
         slidesPerView: 3,
-        
+
       },
       801: {
         spaceBetween: 32
@@ -135,6 +135,30 @@
       }
     }
   });
+  // Cлайдер-отзывы 
+  new Swiper('.testimonials__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
 
+    navigation: {
+      nextEl: '.testimonials__next',
+      prevEl: '.testimonials__prev',
+    },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable:true,
+  },
 
+      breakpoints: {
+      901: {
+        slidesPerView: 1.5,
+        spaceBetween: 32
+      },
+      1201: {
+        slidesPerView: 2.1,
+        spaceBetween: 32
+      },
+    }
+  });
 })()

@@ -49,6 +49,15 @@
   height: 100%;
 }
 
+.company__section {
+  padding: 140px 0;
+}
+.program__section,
+.gallery__section,
+.testimonials__section {
+  padding-bottom: 145px;
+}
+
 .button {
   width: 100%;
   display: flex;
@@ -80,4 +89,122 @@
   font-size: 74px;
   line-height: .82;
   color: var(--accent-text);
+}
+/* -------------------------------------------- */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #0000006e;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s;
+
+}
+
+.body--opened-modal .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__window {
+  position: relative;
+  background: var(--general-bg);
+  border-radius: var(--border-radius);
+  padding: 0 60px 60px;
+  max-width: 428px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__close-btn path,
+.modal__close-btn rect {
+  transition: var(--transition);
+}
+
+.modal__close-btn:hover path,
+.modal__close-btn:hover rect {
+  stroke: #ac907a;
+}
+
+.modal__img {
+  margin: -65px 0 15px 15px;
+  max-width: 100%;
+}
+
+.modal__title {
+  margin-bottom: 10px;
+  line-height: .9;
+  font-size: 42px;
+}
+
+.modal__text {
+  margin-bottom: 30px;
+}
+
+.modal__form-label {
+  margin-bottom: 10px;
+}
+
+.field {
+  position: relative;
+  display: block;
+
+}
+
+.field span {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 11px;
+  color: #ac907a;
+  ;
+  transition: var(--transition);
+}
+
+.field__input {
+  width: 100%;
+  display: block;
+  padding: 19px 42px 19px 28px;
+  border: 1px solid #ac907a;
+  border-radius: 100px;
+  background: transparent;
+  transition: var(--transition);
+}
+
+.field__input::placeholder {
+  color: #ac907a;
+  transition: var(--transition);
+}
+
+.field__input:hover {
+  border: 1px solid #ffa55c;
+}
+
+.field__input:focus {
+  padding: 26px 42px 12px 28px;
+}
+
+.field__input:focus+span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.field__input:hover::placeholder {
+  color: #ffa55c;
+}
+
+.modal__button {
+  width: 100%;
+
 }
