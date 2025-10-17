@@ -4,6 +4,7 @@
   --uppercase-text: #ceaad0;
   --general-bg: #fff9f4;
   --accent-color: #ffa55c;
+  --input-color: #ac907a;
   --accent-bg: #FFE0CB;
   --transition: all 0.4s;
   --border-radius: 20px;
@@ -132,7 +133,7 @@
 
 .modal__close-btn:hover path,
 .modal__close-btn:hover rect {
-  stroke: #ac907a;
+  stroke: var(--input-color);
 }
 
 .modal__img {
@@ -167,7 +168,7 @@
   opacity: 0;
   visibility: hidden;
   font-size: 11px;
-  color: #ac907a;
+  color: var(--input-color);
   ;
   transition: var(--transition);
 }
@@ -176,14 +177,14 @@
   width: 100%;
   display: block;
   padding: 19px 42px 19px 28px;
-  border: 1px solid #ac907a;
+  border: 1px solid var(--input-color);
   border-radius: 100px;
   background: transparent;
   transition: var(--transition);
 }
 
 .field__input::placeholder {
-  color: #ac907a;
+  color: var(--input-color);
   transition: var(--transition);
 }
 
