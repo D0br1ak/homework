@@ -9,8 +9,10 @@
   --transition: all 0.4s;
   --border-radius: 20px;
 }
-
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 .body {
   background: var(--general-bg);
   font-family: "Montserrat", "Arial", sans-serif;

@@ -504,8 +504,6 @@
   margin-bottom: 20px;
 }
 
-.testimonials__text {}
-
 .testimonials__nav {
   display: flex;
   gap: 30px;
@@ -632,8 +630,6 @@
   color: var(--uppercase-text);
 }
 
-.testimonials__quote {}
-
 .testimonials__quote span {
   display: block;
   font-family: 'Gabriola';
@@ -704,8 +700,6 @@ right: 0;
 .contact__text {
   margin-bottom: 40px;
 }
-
-.contact__form {}
 
 .contact__label {
   margin-bottom: 10px;
@@ -974,6 +968,9 @@ right: 0;
 }
 
 @media (max-width: 800px) {
+  html{
+  scroll-padding-top: 50px;
+}
   .hero__content {
     display: flex;
     flex-direction: column;

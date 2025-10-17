@@ -85,6 +85,7 @@
 
       const accordionControl = e.target.closest('.accordion-list__control');
       if (!accordionControl) return
+      e.preventDefault()
       const accordionItem = accordionControl.parentElement;
       const accordionContent = accordionControl.nextElementSibling;
 
@@ -145,12 +146,12 @@
       nextEl: '.testimonials__next',
       prevEl: '.testimonials__prev',
     },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable:true,
-  },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
 
-      breakpoints: {
+    breakpoints: {
       901: {
         slidesPerView: 1.5,
         spaceBetween: 32
