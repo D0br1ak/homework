@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Oswald"),
+    local("Oswald-Regular"),
+    url(../fonts/Oswald-Regular.woff2)format('woff2'),
+    url(../fonts/Oswald-Regular.woff)format('woff'),
+    url(../fonts/Oswald-Regular.ttf)format('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    local("Oswald"),
+    local("Oswald-Medium"),
+    url(../fonts/Oswald-Medium.woff2)format('woff2'),
+    url(../fonts/Oswald-Medium.woff)format('woff'),
+    url(../fonts/Oswald-Medium.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    local("Oswald"),
+    local("Oswald-SemiBold"),
+    url(../fonts/Oswald-SemiBold.woff2)format('woff2'),
+    url(../fonts/Oswald-SemiBold.woff)format('woff'),
+    url(../fonts/Oswald-SemiBold.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Archivo"),
+    local("Archivo-Regular"),
+    url(../fonts/Archivo-Regular.woff2)format('woff2'),
+    url(../fonts/Archivo-Regular.woff)format('woff'),
+    url(../fonts/Archivo-Regular.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    local("Archivo"),
+    local("Archivo-SemiBold"),
+    url(../fonts/Archivo-SemiBold.woff2)format('woff2'),
+    url(../fonts/Archivo-SemiBold.woff)format('woff'),
+    url(../fonts/Archivo-SemiBold.ttf)format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Archivo"),
+    local("Archivo-Bold"),
+    url(../fonts/Archivo-Bold.woff2)format('woff2'),
+    url(../fonts/Archivo-Bold.woff)format('woff'),
+    url(../fonts/Archivo-Bold.ttf)format('ttf');
+  font-display: swap;
+}

@@ -1,0 +1,281 @@
+
+.header {
+  color: #ffffff;
+  font-family: 'Archivo';
+  font-size: 22.33px;
+  font-weight: 600;
+  line-height: 100%;
+
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #ffffff4d;
+}
+
+
+
+
+.nav__list {
+  display: flex;
+  gap: 8vh 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav__link {
+  position: relative;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -14px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent-bg);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.nav__link:hover::before {
+  opacity: 1;
+}
+
+.header__actions {
+  margin-left: 20px;
+  z-index: 11;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions__img {
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.actions__img svg {
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.actions__img path {
+  transition: var(--transition);
+
+}
+
+.actions__img:first-child {
+  z-index: 1;
+  position: relative;
+}
+
+.actions__img:first-child::after {
+  content: "2";
+  position: absolute;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -3px;
+  left: 24px;
+  width: 18px;
+  height: 18px;
+  background: var(--accent-bg);
+  border-radius: 50%;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.actions__img:hover:first-child::after {
+  background: #ffffff;
+  color: var(--general-bg);
+}
+
+.actions__img:hover path {
+  fill: var(--accent-bg);
+}
+
+
+
+/* =------------------------------ */
+.hero {
+  margin-top: 40px;
+}
+
+.hero__top {
+  z-index: -1;
+  position: relative;
+}
+
+
+
+.hero__title {
+  font-size: 198.68px;
+  font-weight: 600;
+  line-height: .94;
+
+}
+
+.hero__title::after {
+  content: "WITHIN";
+  position: absolute;
+  right: 1.3%;
+  bottom: 0;
+  font-size: 397.35px;
+  font-weight: 600;
+  line-height: .94;
+  -webkit-text-stroke: 1px #ffffff4d;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__bottom {
+  position: relative;
+  background: url(../images/sport/header-bg.png) 50% 50% / cover no-repeat;
+  display: flex;
+  width: 1920px;
+  margin-left: -100px;
+  margin-top: -30px;
+}
+
+.hero__icon {
+  position: absolute;
+  top: -7%;
+  left: 50%;
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: orange;
+  transition: var(--transition);
+
+}
+
+.hero__icon:hover {
+  background: #ffffff;
+}
+
+.hero__grid {
+  width: 100%;
+  margin-top: 500px;
+  color: var(--general-bg);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2px;
+}
+
+.grid__item {
+  background: #ffffff;
+  padding: 56px 46px 53px 58px;
+  transition: var(--transition);
+}
+
+.grid__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.grid__item:hover {
+  background: var(--accent-bg);
+  padding: 56px 46px 53px 58px;
+  ;
+  transition: var(--transition);
+}
+
+.grid__link span {
+  font-family: var(--accent-font);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 5px;
+  color: var(--accent-bg);
+  transition: var(--transition);
+}
+
+.grid__link:hover span {
+  color: #ffffff;
+}
+
+.grid__title {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 176px;
+  margin-top: 4px;
+}
+
+/* -------------------------------------------------- */
+
+.burger-icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: #ffffff;
+  transition: var(--transition);
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: "";
+  position: absolute;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+
+}
+
+.burger-icon span::before {
+  top: -8px;
+
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0px;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0px;
+  transform: rotate(-45deg);
+}

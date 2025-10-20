@@ -1,0 +1,51 @@
+:root{
+--general-font: 'Oswald';
+--accent-font: 'Archivo';
+--general-bg : #141414;
+--accent-bg :#f47521;
+--transition : all, .4s;
+}
+
+
+
+
+/* -------------------------------- */
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+.body {
+  background: var(--general-bg);
+  font-size: 16px;
+  font-weight: 400;
+}
+.body--opened-menu {
+  overflow: hidden;
+}
+.main {
+  flex-grow: 1;
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width:  1740px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+.title {
+  font-family: 'Oswald';
+}
+.logo {
+  max-width: 198px;
+  z-index: 12;
+}
+
+.logo img {
+  width: 100%;
+}
