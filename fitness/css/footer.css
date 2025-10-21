@@ -72,6 +72,7 @@
 
 .info__socials {
   display: flex;
+  justify-content: space-between;
   gap: 45px;
 }
 

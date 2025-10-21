@@ -17,16 +17,31 @@
 
   // Слайдер
   const swiper = new Swiper('.product__slider', {
+    direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 15,
-
-      pagination: {
-        el: ".product__pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
+      mousewheel: true,
+      
+    pagination: {
+      el: ".product__pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index === 0 ? '1' : '') + '</span>';
       },
+    },
+on: {
+  slideChange: function () {
 
+    document.querySelectorAll('.product__pagination span').forEach((bullet, index) => {
+      if (index === this.activeIndex) {
+        // Для активного слайда добавляем цифру
+        bullet.innerHTML = index + 1;
+      } else {
+        bullet.innerHTML = '';
+      }
+    });
+  },
+},
   });
+  
 })()
