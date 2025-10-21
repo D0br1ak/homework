@@ -33,7 +33,7 @@
 }
 
 .product__info {
-  margin-left: 295px;
+  margin-left: 121px;
   max-width: 501px;
   width: 100%;
 }
@@ -255,7 +255,7 @@
   }
 
   .product__info {
-    margin-left: 0px;
+    margin-left: px;
     justify-content: center;
     text-align: center;
   }
@@ -488,7 +488,7 @@
     max-height: 142px;
     color: var(--general-bg);
     font-family: var(--general-font);
-    z-index: -1;
+    z-index: 1;
     position: relative;
 
 
