@@ -19,7 +19,7 @@
   const swiper = new Swiper('.product__slider', {
     direction: "vertical",
     slidesPerView: 1,
-    spaceBetween: 15,
+    
       mousewheel: true,
       
     pagination: {
@@ -31,10 +31,8 @@
     },
 on: {
   slideChange: function () {
-
     document.querySelectorAll('.product__pagination span').forEach((bullet, index) => {
       if (index === this.activeIndex) {
-        // Для активного слайда добавляем цифру
         bullet.innerHTML = index + 1;
       } else {
         bullet.innerHTML = '';
