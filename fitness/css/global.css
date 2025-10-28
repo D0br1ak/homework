@@ -1,6 +1,7 @@
 :root{
 --general-font: 'Oswald';
 --accent-font: 'Archivo';
+--accent-text: #ffffff;
 --general-bg : #141414;
 --accent-bg :#f47521;
 --transition : all, .4s;
@@ -33,13 +34,29 @@ html{
   flex-direction: column;
 }
 .container {
-  max-width:  1740px;
+  max-width:  1950px;
   margin: 0 auto;
-  padding: 0 15px;
+
   height: 100%;
 }
 .title {
   font-family: 'Oswald';
+}
+.button {
+  background: var(--accent-bg);
+  padding: 23px 61px;
+  border-left: 4px solid var(--accent-text);
+  font-family: 'Oswald';
+  font-size: 20px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--accent-text);
+  border-left: 4px solid var(--accent-bg);
+  color: var(--general-bg);
+
 }
 .logo {
   max-width: 198px;
