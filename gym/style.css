@@ -1,0 +1,51 @@
+body{
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+header{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ border-bottom: 2px solid grey;
+}
+header p{
+  color: gray;
+}
+header a {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  color: black;
+}
+main a{
+  text-decoration: none;
+  color: rgb(143, 143, 250);
+}
+h1, h2{
+  text-transform: uppercase;
+}
+footer{
+  background: #faeefb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer div{
+    margin-top: 40px;
+}
+footer ul{
+
+  display: flex;
+
+  gap: 10px;
+  list-style: none;
+}
+footer a{
+  text-decoration: none;
+  color: gray;
+}
+footer p{
+  color: gray;
+}
