@@ -81,7 +81,7 @@ label {
 }
 
 .checkbox:checked::after {
-  background: url("https://github.com/D0br1ak/homework/blob/main/form/images/check-icon.svg") no-repeat center, #2eff1f;
+  background: url("../images/check-icon.svg") no-repeat center, #2eff1f;
 }
 
 .checkbox-text {
@@ -125,3 +125,4 @@ button:focus-visible {
   outline-offset: 1px;
 
 }
+
