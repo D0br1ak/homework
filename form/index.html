@@ -17,20 +17,20 @@
       <label for="Age">Ваш Возраст</label>
       <input class="input" type="number" name="Age" placeholder="35" required>
       <label for="Tel">Ваш номер телефона</label>
-      <input class="input" type="tel" name="Tel" placeholder="Номер телефона" required>
+      <input class="input" type="tel" name="Tel" placeholder="Телефон" required>
       <label for="Email">Ваша почта</label>
       <input class="input" type="email" name="Email" placeholder="formtest@mail.ru" required>
     </fieldset>
     <fieldset class="form-group">
       <label class="textarea-name" for="Message">Сообщение</label>
       <textarea class="textarea" name="Message" placeholder="Ваше сообщение" id=""></textarea>
-      <input class="checkbox" name="checkbox" type="checkbox">
-      <label for="checkbox">Я принимаю условия правила</label>
+      <label class="label checkbox-label">
+        <input class="checkbox" type="checkbox" name="checkbox" required />
+        <span class="checkbox-text">Я принимаю правила</span>
+      </label>
     </fieldset>
     <button type="submit">Отправить</button>
   </form>
 </body>
 
-
 </html>
-

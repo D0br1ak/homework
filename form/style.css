@@ -1,19 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
 .form {
   display: inline-block;
-  border: 1px solid #000;
-  border-radius: 12px;
-  padding: 10px;
-  width: 350px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
 }
 
 legend {
-  margin-bottom: 5px;
-  font-weight: 900;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .form-group {
   border: none;
+  padding: 0;
+}
 
+label {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .input {
@@ -23,23 +42,85 @@ legend {
   display: block;
 }
 .textarea {
-  display: block;
-    padding: 5px 10px;
-  border-radius: 10px;
+  max-height: 150px;
+  min-height: 30px;
   resize: vertical;
-  width: 165px;
-  max-height: 200px;
-    min-height: 50px;
-  margin-bottom: 10px;
+}
+.input,
+.textarea {
+  border: 1px solid #333;
+  border-radius: 6px;
+  width: 100%;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  outline: none;
+}
+.checkbox-label {
+  position: relative;
+  padding-left: 22px;
 }
 
 .checkbox {
-  border-radius: 12px;
+  position: absolute;
+  top: -2px;
+  left: 20px;
+  appearance: none;
+  outline: none;
 }
 
-button{
+.checkbox::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 16px;
+  height: 16px;
+  margin-left: -22px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox:checked::after {
+  background: url("../images/check-icon.svg") no-repeat center, #2eff1f;
+}
+
+.checkbox-text {
+  font-size: 14px;
+}
+
+button {
   margin-left: 10px;
   padding: 5px;
   border-radius: 10px;
+}
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  background-color: #2eff1f;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
 
+button:hover {
+  opacity: 0.65;
+}
+
+button:not(:disabled):active {
+  background-color: #8719db;
+}
+
+button:disabled,
+.checkbox:disabled::after {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.checkbox:focus-visible::after,
+button:focus-visible {
+  outline: 2px solid #2eff1f;
+  outline-offset: 1px;
 }
