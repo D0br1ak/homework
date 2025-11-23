@@ -81,7 +81,7 @@ label {
 }
 
 .checkbox:checked::after {
-  background: url("check-icon.svg") no-repeat center, #2eff1f;
+  background: url("../images/check-icon.svg") no-repeat center, #2eff1f;
 }
 
 .checkbox-text {
@@ -123,5 +123,4 @@ button:disabled,
 button:focus-visible {
   outline: 2px solid #2eff1f;
   outline-offset: 1px;
-
 }
