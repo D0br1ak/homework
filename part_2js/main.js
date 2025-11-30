@@ -5,7 +5,7 @@ let number = 5;
 if (number % 2 === 0) {
   console.log("Число чётное");
 }
-else (number % 2 != 0)
+else if (number % 2 != 0)
 console.log("Нечётное число");
 
 // Задача 2.
@@ -17,6 +17,7 @@ console.log("Нечётное число");
 // 3. Выведите значение discount в консоль.
 // 4. *Дополнительное задание: перепишите задачу на switch-case.
 
+// Задача 2
 let age = 30;
 let discount;
 switch (true) {
@@ -38,7 +39,6 @@ console.log(discount);
 //     (username равен "admin" или "user") и пароль равен "123456"
 //     то выведите сообщение "Доступ разрешен", иначе — "Доступ запрещен".
 // 3. Используйте prompt для ввода имени пользователя и пароля.
-
 const username = prompt("Введите имя пользователя:");
 const password = prompt("Введите пароль:");
 
@@ -83,27 +83,18 @@ if (
 
 // 6. Вывод результата:
 //    С помощью alert выведите итоговую стоимость доставки, например: "Итоговая стоимость доставки: 15$."
+const weight = +prompt("Введите вес посылки (в кг):");
 
-const weight = prompt("Введите вес посылки (в килограммах):");
-const deliveryType = prompt("Введите тип доставки (Стандарт, Экспресс, Премиум):");
-if (isNaN(weight ) || weight  <= 0) {
+if (weight <= 0 || isNaN(weight)) {
   alert("Некорректный вес посылки");
-} else if (
-  deliveryType !== "Стандарт" &&
-  deliveryType !== "Экспресс" &&
-  deliveryType !== "Премиум"
-) {
-  alert("Неверный тип доставки");
 } else {
-  let cost;
-  if (weight < 1) {
-    baseCost = 5;
-  } else if (weight  <= 5) {
-    cost = 10;
-  } else {
-    cost = 15;
-  }
-  let coefficient;
+  const deliveryType = prompt(
+    "Введите тип доставки (Стандарт, Экспресс, Премиум):"
+  );
+
+  const baseCost = weight < 1 ? 5 : weight <= 5 ? 10 : 15;
+  let coefficient = 0;
+
   switch (deliveryType) {
     case "Стандарт":
       coefficient = 1;
@@ -114,8 +105,15 @@ if (isNaN(weight ) || weight  <= 0) {
     case "Премиум":
       coefficient = 2;
       break;
+    default:
+      alert("Неверный тип доставки");
+      coefficient = 0;
   }
-  const totalCost = cost * coefficient;
 
-  alert(`Итоговая стоимость доставки: ${totalCost}€`);
+  if (coefficient !== 0) {
+    const finalCost = baseCost * coefficient;
+    alert(`Итоговая стоимость доставки: ${finalCost}$`);
+  }
 }
+
+
