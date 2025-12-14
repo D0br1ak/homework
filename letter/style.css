@@ -104,7 +104,7 @@ width: 1000px;
 
 .modal {
   font-family: 'Caveat', cursive;
-  font-size: 54px;
+  font-size: 44px;
   display: none;
   position: fixed;
   z-index: 10;
@@ -146,3 +146,4 @@ width: 1000px;
 align-self: flex-end;
 
 }
+
