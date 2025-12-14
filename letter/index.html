@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <title>Письмо Деду Морозу</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="table">
+        <div class="letter">
+          <h1 class="letter_title">Вам письмо!</h1>
+          <button class="button" id="openBtn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2>Дорогой Дедушка М... Мороз!</h2>
+      <p class="text">Меня зовут Олег,мне 22года я из города Гомель в Беларуси.
+        Пишу тебе с новогодним вайбом. Так ещё и снег сегодня выпал!
+        В прошлый раз не принимал участие в в конкурсе, но в этот раз как будто чувствую, что надо!
+        Спасибо тебе за то, что ты делаешь!
+      </p>
+      <ul class="content_list">
+        <h3>Желаю в Новом Году:</h3>
+        <li class="list_item">
+          Уволится с работы без изменения финансового положения(как минимум).
+        </li>
+        <li class="list_item">
+          Выучить JS.
+        </li>
+        <li class="list_item">
+          Пожать 120 от груди.
+        </li>
+        <li class="list_item">
+          Закрепиться в профессии Веб-разработчика.
+        </li>
+      </ul>
+      <ul class="content_list">
+        <h3>Обещаю</h3>
+        <li class="list_item">
+          Больше отдыхать
+        </li>
+        <li class="list_item">
+          Чаще ходить в зал.
+        </li>
+        <li class="list_item">
+          Больше уделять времени на изучение JS.
+        </li>
+        <li class="list_item">
+          Не лениться и успешно двигаться к совей цели.
+        </li>
+      </ul>
+          <p class="author">от D0br1ak</p>
+    </div>
+
+  </div>
+
+  <script>
+    const modal = document.getElementById('myModal');
+    const openBtn = document.getElementById('openBtn');
+    openBtn.onclick = () => {
+      modal.style.display = 'block';
+    };
+
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+
+    };
+  </script>
+</body>
+
+</html>
