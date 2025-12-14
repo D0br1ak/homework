@@ -130,12 +130,6 @@ width: 1000px;
   text-align: center;
 }
 
-
-.modal-content h2 {
-  text-wrap: nowrap;
-
-}
-
 .text {
   justify-self: start;
   font-size: 36px;
@@ -150,4 +144,5 @@ width: 1000px;
 
 .author{
 align-self: flex-end;
+
 }
