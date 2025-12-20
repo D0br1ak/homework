@@ -16,7 +16,7 @@
     } else (document.body.classList.remove('body--opened-menu'))
 
   }
-  // Слайдер
+  // Slider
   const swiper = new Swiper('.hero__slider', {
     slidesPerView: 1,
     spaceBetween: 15,
@@ -31,6 +31,5 @@
     },
 
   });
-
 
 })()

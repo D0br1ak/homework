@@ -8,7 +8,7 @@ opacity: .9;
 }
 
 .header__nav {
-  position: sticky;
+  position: static;
   top: 190px;
   left: 0;
   right: 0;
