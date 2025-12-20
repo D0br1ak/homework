@@ -62,9 +62,6 @@
 }
 @media(width <=768px){
   .descr__item {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   gap: 15px;
 }
  .descr__content {
