@@ -50,9 +50,9 @@
 }
 
 
-.descr__item:last-child {
-  flex-direction: column;
-  gap: 5px;
+.descr__item {
+  display: flex;
+  gap: 8px;
 }
 
 
