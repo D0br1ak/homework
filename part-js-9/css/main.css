@@ -120,6 +120,8 @@ body {
 
 .todo.completed {
 	opacity: 0.7;
+	text-decoration: line-through;
+	color: rgb(124, 213, 124);
 }
 
 .todo.completed .todo-text {
