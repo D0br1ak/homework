@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-	--background-color: #1a1a1a;
+	--background-color: #181821;
 	--card-background: #2b2b2b;
 	--text-color: #e0e0e0;
-	--accent-color: #9a7bca;
+	--accent-color: #7690f7;
 	--border-color: #444444;
 	--border-radius: 0.2rem;
 }
