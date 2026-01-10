@@ -1,9 +1,9 @@
 
-import HeaderFixed from '.js/header.js';
-import initBurger from '.js/burger.js';
-import initSlider from '.js/slider.js';
-import initModal from '.js/modal.js';
-import initSizes from '.js/sizes.js';
+import HeaderFixed from './header.js';
+import initBurger from './burger.js';
+import initSlider from './slider.js';
+import initModal from './modal.js';
+import initSizes from './sizes.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
